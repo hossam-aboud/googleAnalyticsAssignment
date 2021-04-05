@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".DetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#fece2f"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/prodect_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:src="@drawable/undraw_off_road_oae" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-100dp"
+        android:layout_width="match_parent"
+        android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="125dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:cardBackgroundColor="#fece2f"
+            android:background="#fece2f"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/payment_icon" />
+
+                <TextView
+                    android:fontFamily="@font/bungee"
+                    android:id="@+id/payment_label"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Dollor"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_height="125dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            app:cardBackgroundColor="#fece2f"
+            android:background="#fece2f"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:padding="5dp">
+
+                <ImageView
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="30dp"
+                    android:layout_width="30dp"
+                    android:src="@drawable/payment_icon" />
+
+                <TextView
+                    android:fontFamily="@font/bungee"
+                    android:id="@+id/price"
+                    android:includeFontPadding="false"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="300$"
+                    android:textSize="20sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/t_name"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start"
+            android:background="#fff"
+            android:text="Name prodect"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:paddingStart="10dp"/>
+
+        <TextView
+            android:id="@+id/t_dec"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="start"
+            android:background="#fff"
+            android:text="descreption"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:fontFamily="@font/josefin_sans_bold"
+            android:layout_marginTop="20dp"
+            android:paddingStart="10dp"/>
+
+
+        <Button
+            android:id="@+id/btn_b"
+            android:background="@drawable/bucard"
+            android:fontFamily="@font/bungee"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:text="Bey" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

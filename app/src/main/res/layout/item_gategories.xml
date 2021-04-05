@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="15dp"
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        app:cardMaxElevation="2dp"
+        app:cardCornerRadius="10dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imacard"
+                android:layout_width="match_parent"
+                android:layout_height="203dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imagecard"
+                tools:ignore="ContentDescription" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="90dp">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="3.4dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="Happy Bones"
+                        android:textColor="#3E3F68"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="10dp"
+                        android:text="Dollor"
+                        android:padding="4dp"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/bucard"/>
+
+                    <TextView
+                        android:id="@+id/pricee"
+                        android:layout_width="60dp"
+                        android:layout_height="25dp"
+                        android:padding="4dp"
+                        android:layout_marginStart="5dp"
+                        android:text="13$"
+                        android:layout_gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:textColor="#fff"
+                        android:background="@drawable/bucardt"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_gravity="bottom|center_horizontal">
+
+                    <TextView
+                        android:id="@+id/address_restaurantProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/josefin_sans_bold"
+                        android:text="394 Broome St, New York, NY 10013, USA"
+                        android:textColor="#8A98BA" />
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

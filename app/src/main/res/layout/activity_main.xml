@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:transitionName="logo_image"
+        android:src="@drawable/undraw_off_road_oae"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bungee"
+        android:text="CHOOSE THE PRODUCT"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:transitionName="logo_text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories available"
+        android:layout_marginBottom="20dp"
+        android:textColor="#D88728"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/bu1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Food"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:background="@color/black"/>
+
+    <Button
+        android:id="@+id/bu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Electronics"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:background="@color/black"/>
+
+    <Button
+        android:id="@+id/bu3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clothes"
+        android:textSize="28sp"
+        android:textColor="#fff"
+        android:layout_margin="20dp"
+        android:background="@color/black"/>
+
+
+</LinearLayout>
